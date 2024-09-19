@@ -1,0 +1,274 @@
+/* Fonts */
+h1, h2, h3, h4 {
+    font-family: 'Roboto Slab', serif;
+}
+
+html, p, span, article {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+/* Header Section */
+#mainheader {
+    background-color: #003964; 
+    padding: 15px 0;
+}
+
+#mainheader nav ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#mainheader nav ul li {
+    padding: 10px 0; 
+}
+
+#mainheader nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Search Section */
+.search {
+    background-color: #074980; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px; 
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.searchbox {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    max-width: 300px;
+}
+
+/* Hero Section */
+
+.hero {
+    background-image: url('assets/photos/puppy-hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px 50px;
+}
+.hero nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.hero h1, .hero p {
+    color: #003964;
+}
+
+.hero-button {
+    background-color: #003964;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+/* Testimonials */
+
+.testimonials h1, .testimonials p {
+    text-align: center;
+}
+
+
+/* About Doggo Section */
+
+.aboutDoggo {
+    background-color: #074980;
+    padding: 50px 50px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+
+.aboutDoggo h1, .aboutDoggo article {
+    margin-bottom: 20px;
+}
+
+.aboutDoggo img {
+    max-width: 200px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Top Recommendations */
+.topRecommendations {
+    background-color: white;
+    padding: 50px 50px;
+}
+
+/* About Us */
+.aboutUs {
+    background-color: #f85c62;
+    padding: 50px 50px; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+}
+.aboutUs img {
+    max-width: 400px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.aboutUs h1, .aboutUs article {
+    margin-bottom: 20px;
+}
+
+/* Tiles Section */
+.tileSection {
+    background-color: white;
+    padding: 15px 0;
+}
+.tile {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 5px;
+    margin-inline-end: 10px;
+    width: 50%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.text {
+    flex: 1;
+    color: black;
+    font-size: 16px;
+}
+
+/* Contact */
+.contact {
+    background-color: #604884;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    flex: 1;
+}
+
+
+.contact-section.corporate {
+    text-align: left;
+}
+
+.contact-section.contact {
+    text-align: right;
+}
+
+
+/* Footer */
+footer{
+    background-color: #003964;
+    color: white;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px; 
+
+}
+
+#footerCopyright {
+    text-align: right;
+}
+
+#footerPrivacy {
+    text-align: left;
+}
+/* Media for Desktop and Tablet */
+@media (min-width: 768px) {
+    .search {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        align-items: center;
+    }
+
+    .logo {
+        margin-bottom: 0;
+        max-width: 100px;
+    }
+
+    .searchbox {
+        width: 50%; 
+    }
+
+    #mainheader nav ul {
+        flex-direction: row; 
+        justify-content: center; 
+    }
+
+    #mainheader nav ul li {
+        padding: 0 20px; 
+    }
+    .aboutDoggo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .aboutDoggo h1, .aboutDoggo article {
+        max-width: 50%;
+        text-align: left;
+    }
+
+    .aboutDoggo h1 {
+        margin-bottom: 10px;
+    }
+
+    .aboutDoggo article {
+        margin-top: 0;
+    }
+
+    .aboutDoggo img {
+        max-width: 300px;
+        height: auto;
+        margin-left: 20px;
+    }
+}
